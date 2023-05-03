@@ -8,10 +8,18 @@
 
     //ENTRADA
 
+    const nota01 = Number(prompt("Informe qual foi sua nota na primera avaliação").replace(",", "."))
+    const nota02 = Number(prompt("Informe qual foi sua nota na segunda avaliação").replace(",", "."))
+    const nota03 = Number(prompt("Informe qual foi sua nota na terceira avaliação").replace(",", "."))
 
     //PROCESSAMENTO
 
+    const total01 = nota01 + nota03
+    const total13 = total01 / 3
+    const total02 = nota02 / 4
+    const total = total13 + total02
 
     //SAÍDA
 
+    document.write(`A média será de ${total}.`)
 </script>

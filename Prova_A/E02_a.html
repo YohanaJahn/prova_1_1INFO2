@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: Salário mínimo
@@ -8,10 +9,15 @@
 
     //ENTRADA
 
+    const inflAnual = Number(prompt("Informe qual é a inflação anual"));
 
     //PROCESSAMENTO
 
-
+    const salario = 1320 * inflAnual;
+    const divi = salario/100
+    const salarioAtual = 1320 - divi;
     //SAÍDA
+
+    document.write (`O salário será de R$ ${salarioAtual.toFixed(2).replace("." , ",")}`)
 
 </script>

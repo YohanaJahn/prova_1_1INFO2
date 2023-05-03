@@ -9,10 +9,15 @@
 
     //ENTRADA
 
+        const pet = Number(prompt("Informe qual é a idade do seu Pet").replace(",", "."));
+        const consulta = Number(prompt("Informe quanto é o preço da consulta anual").replace(",", "."));
+        const vacina = Number(prompt("Informe quanto é gasto de vanicas anualmente").replace(",", "."));
 
     //PROCESSAMENTO
 
+        const valor = consulta + vacina
+        const total = valor * pet
 
     //SAÍDA
-
+        document.write(`O valor mínimo a ser gasto foi de R$ ${total.toFixed(2).replace(".", ",")}`);
 </script>

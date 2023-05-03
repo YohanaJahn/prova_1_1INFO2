@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: Média do preço
@@ -11,11 +12,18 @@
     */
 
     //ENTRADA
-
+    
+    const Normal =Number(prompt("Informe qual é o valor do ingresso Normal").replace(",", "."));
+    const Camarote =Number(prompt("Informe qual é o valor do ingresso Camarote").replace(",", "."));
+    const Vip =Number(prompt("Informe qual é o valor do ingresso VIP").replace(",", "."));
 
     //PROCESSAMENTO
 
+    const Total = Normal + Camarote + Vip
+    const Media = Total / 3
 
     //SAÍDA
 
+    document.write (`O valor médio para entrar no Show será de R$ ${Media.toFixed(2).replace(".", ",")}.`)
 </script>
+
